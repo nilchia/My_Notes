@@ -188,3 +188,102 @@ Let's try to map gene regulatory events in 1D and 3D
     * It is fast and scalable
     * out-of-memory computation
     * still under development
+
+## Third Day
+
+### 13. Towards AI-driven Discoveries in Single-cell Genomics 
+**Maria Brbic** (EPFL) (keynote)
+
+1. Generative AI paradigm and the era of foundation models
+    * Foundation model is a model that has learned features transferable to a wide range of downstream tasks
+
+2. Single-cell data is challenging for today's data
+    * Heterogeneous experiments
+        * Discovering cell types across tissues, disease states, and species
+        * Data coming from different labs, platforms, tissues, donors, and species
+        * How can we analyze all these data and gain new insights?
+    * Novel and unknown phenomena
+    * Different modalities
+
+3. [MARS](https://github.com/snap-stanford/mars):
+    * Learn cell embeddings to discover novel cell types
+    * It can use annotated data from different tissues with different cell types to annotate an unknown data
+    * This tool was used in "Fly Cell Atlas" and "Aging Fly Cell Atlas" 
+
+4. [STELLAR](https://github.com/snap-stanford/stellar):
+    * Novel cell type discovery in spatial biology
+    * It uses an annotated reference spatial dataset to find cell types in an unannotated dataset
+    * It creates cell graph in annotated and unannotated data then uses a graph convolutional encoder to find known and novel cell types
+    * It can also annotate cancer donor tissue using healthy donor tissue
+    * It was used in Human Intestine Atlas
+    * It has annotated >2.6M spatially resolved cells from colon and small bowel across eight different donors
+
+5. [SATURN](https://github.com/snap-stanford/SATURN):
+    * Towards universal cell embeddings
+        * Can we create cell embeddings for any species any set of genes?
+        * Challenges are batch effect and different genes across species
+        * Idea: embed cells into functional expression space!
+            * It means to transform expression to reflect biological function rather than specific genes
+            * But how to capture biological meaning of genes?
+                * Use protein language models
+    * Key idea of SATURN is to map diverse sets of genes in the joint space of macrogenes
+        * Macrogenes are functionally related genes
+        * This model uses language models to learn macrogenes space
+        * with this model, cells across species are well aligned, and specific cells are not forced to align
+        * This model can also be used to do differential expression in macrogene space to find multi-species functional markers
+
+ 6. [TURTLE](https://github.com/mlbio-epfl/turtle):
+    * Enable discovery from foundation models
+    * We have large pre-trained foundation models but how to enable new discoveries?
+    * Current paradigm still require supervision:
+        * Fine-tune on the task of interest using labeled data
+        * Zero-shot transfer on the task of interest using instructions
+        * These are not suitable for new discoveries 
+    * How to infer classed without any supervision?
+    * Key idea: search for a labeling such that linear models will generalize well in different representation space
+    * Searching for a labeling requires solving discrete optimization problem over ALL possible labelings
+        * Solution: Resort continuous optimization via relaxation (continuous search over parameters of task encoder)
+    * Unsupervised transfer outperforms Zero-shot
+    * Turtle outperforms [scGPT](https://github.com/bowang-lab/scGPT) and [scVI](https://github.com/scverse/scvi-tools)
+
+7. On Multi-modality 
+    * Generating complex tissue structures from gene expressions
+        * Maria is working on a tool that with given single-cell expression matrix and annotation, predicts the tissue structure
+        * It is still under development, but the results are promising
+
+### 14. From scanpy to the virtual cell: the coming-of-age of single cell analysis
+**Fabian Theis** (TUM) (keynote)
+
+1. What was the tool questions back then?
+    * How to speed up analysis and scale to high sample numbers?
+    * How to use downstream ML environment (Python)
+    * How to share and reuse data?
+    * Solution? scanpy
+
+2. Virtual cell
+    * model the whole function of the cell with an AI system
+    * Classical systems biology vision (whole cell models) may not be really predictive
+    * Foundation model is a model trained on broad data that can be adapted to a wide range of downstream tasks.
+        * Gather data at scale
+        * Train foundation model once
+        * Evaluate model's performance
+        * Fine-tune model for many downstream tasks
+    * Single-cell analysis is coming-of-age
+    * We need scalable modular analysis tools to help connect labs and build analysis pipeline
+    * This is scverse approach
+    * In the future, data and model reuse via reference mapping with help of foundation models will simplify and may change tool chains once again
+
+### 15. Fast and accurate cell segmentation of highly multiplexed spatial omics using graph neural networks with segger 
+**Elyas Heidari** (DKFZ)
+
+He presented segger, a segmentation tool. It is fast, parallelizable. ([GitHub](https://github.com/EliHei2/segger_dev))
+
+## 16. Novae: a graph-based foundation model for spatial transcriptomics data 
+**Quentin Blampey** (Paris-Saclay University)
+
+* [Novae](https://github.com/MICS-Lab/novae) is a deep learning model for spatial domain assignments of spatial transcriptomics data (at both single-cell or spot resolution).
+*  It works across multiple gene panels, tissues, and technologies.
+* It provides:
+    * Native batch-effect correction
+    * Analysis of spatially variable genes and pathways
+    * Architecture analysis of tissue slides
