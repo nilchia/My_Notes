@@ -53,3 +53,49 @@ The conference was held on 10-12 September 2024 in Munich.
     * [Alevin-fry](https://www.nature.com/articles/s41592-022-01408-3) 
     * [simpleaf](https://academic.oup.com/bioinformatics/article/39/10/btad614/7295550) 
     * [Single-cell best practice](https://www.nature.com/articles/s41576-023-00586-w) 
+
+### 3. User-friendly exploration of (epi)genomic data in single cells using sincei
+**Vivek Bhardwaj** (Utrecht University) 
+
+1. Cell state is maintained by several epigenetic regulations. 
+
+2. Problems in sc-DNA assays
+    * **QC:** standard sc QC is not enough 
+    * **Quantification:** No natural unit for quantifying the signal 
+    * **Statistics:** data distribution depends on assay and features 
+    * **Ease of use:** Challenging to work 
+
+3. Sincei overcomes this problems 
+    * QC based on assay 
+    * Has assay-specific data distribution 
+    * Aggregate signal and visualize over genomic regions 
+
+4. [GitHub](https://github.com/bhardwaj-lab/sincei)
+
+### 4. Unleashing the potential of multiplexed imaging experiments  
+**Angela Oliveira Pisco** (insitro) 
+
+1. They use DINO-ViT which is a self-supervised learning method to study ALS samples. 
+    * In Self-supervised learning the data is provided without label and model uses subsets and augmentations of input to categorize samples 
+    * There is no train and test datasets 
+    * It is a vision transformer. It is alternative to convolutional neural network which converts images into an embedding 
+
+2. On ALS samples they use this model to create embeddings capturing ALS-relevant information 
+
+3. The want to: 
+    * Predict healthy vs sick 
+    * Predict classical features 
+    * Impute transcriptomics from image embeddings 
+
+4. She claimed DINO-VIT embeddings are better than pre-trained model embeddings 
+
+5. POSH platform (Pooled Optical Screening in Human Cells) 
+    * It is a CRISPR system on single-cell level (different mutation on each cell) 
+
+### 5. Immunai 
+**Sponsor talk** (immunai)
+1. They are building a big database for immunity called AMICA 
+2. They call it google map of immune system 
+3. They want to improve drug development 
+
+## Second Day
