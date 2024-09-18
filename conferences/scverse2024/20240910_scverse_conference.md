@@ -144,7 +144,7 @@ Let's try to map gene regulatory events in 1D and 3D
     * It is a supervised deep learning model which accurately predicts the Hi-C contact matrix from scATAC-seq
         * It is relatively lightweight and can be trained on standard GPUs
         * It generalizes to novel cell types and genomes
-        * It strongly outperforms [Cicero](https://github.com/stjude/Cicero)
+        * It strongly outperforms [Cicero](https://github.com/cole-trapnell-lab/cicero-release)
         * It performs equivalently to state-of-the-art [C.Origami](https://github.com/tanjimin/C.Origami), even without using ChIP-seq
 3. Learning gene-level Poisson regression model from single-cell multiome data, [SCARlink](https://github.com/snehamitra/SCARlink)
     * It learns gene-level prediction models from multiome data
@@ -287,3 +287,32 @@ He presented segger, a segmentation tool. It is fast, parallelizable. ([GitHub](
     * Native batch-effect correction
     * Analysis of spatially variable genes and pathways
     * Architecture analysis of tissue slides
+
+
+## Tools discussed at the conference
+
+| Tool | URL | Domain |
+| :--- | :-- | :----- |
+Alevin-fry | https://github.com/COMBINE-lab/alevin-fry | preprocessing
+simpleaf | https://github.com/COMBINE-lab/simpleaf | preprocessing
+scirpy | https://github.com/scverse/scirpy | scRNA-seq
+scp | https://github.com/zhanghao-njmu/SCP | sc-proteomics
+NeuroVelo | https://github.com/idriskb/NeuroVelo | trajectory analysis
+CellSpace | https://github.com/zakieh-tayyebi/CellSpace | scATAC-seq
+ChromaFold | https://github.com/viannegao/ChromaFold | scATAC-seq
+Cicero | https://github.com/cole-trapnell-lab/cicero-release | scATAC-seq
+SCARlink | https://github.com/snehamitra/SCARlink | multiome
+ArchR | https://github.com/GreenleafLab/ArchR | scATAC-seq
+FigR | https://github.com/buenrostrolab/FigR/ | multiome
+SCAN-IT | https://github.com/zcang/SCAN-IT | spatial
+SpaceFlow | https://github.com/hongleir/SpaceFlow | spatial
+scPortrait | https://github.com/MannLabs/scPortrait | imaging
+MARS | https://github.com/snap-stanford/mars | scRNA-seq
+STELLAR | https://github.com/snap-stanford/stellar | spatial
+SATURN | https://github.com/snap-stanford/SATURN | scRNA-seq
+segger | https://github.com/EliHei2/segger_dev | spatial
+bento | https://github.com/ckmah/bento-tools | spatial
+AlevinQC | https://github.com/csoneson/alevinQC | QC
+C.origami | https://github.com/tanjimin/C.Origami | ATAC-seq
+
+
