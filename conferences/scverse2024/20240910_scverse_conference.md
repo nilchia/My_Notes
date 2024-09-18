@@ -156,7 +156,7 @@ Let's try to map gene regulatory events in 1D and 3D
         * [ArchR](https://github.com/GreenleafLab/ArchR) gene score and [DORC](https://github.com/buenrostrolab/FigR/) score
 
 ### 10. Many anecdotes make a novel? Study-centered analysis and training models
-**Alex wolf** (CEO of Lamin) (keynote)
+**Alex wolf** (CEO of Lamin) (**keynote**)
 
 1. Before 2015 High-dim data with high #obs were rare outside imaging
 2. May 2015: droplet-based scRNA-seq → now we have 60k obs
@@ -192,7 +192,7 @@ Let's try to map gene regulatory events in 1D and 3D
 ## Third Day
 
 ### 13. Towards AI-driven Discoveries in Single-cell Genomics 
-**Maria Brbic** (EPFL) (keynote)
+**Maria Brbic** (EPFL) (**keynote**)
 
 1. Generative AI paradigm and the era of foundation models
     * Foundation model is a model that has learned features transferable to a wide range of downstream tasks
@@ -252,7 +252,7 @@ Let's try to map gene regulatory events in 1D and 3D
         * It is still under development, but the results are promising
 
 ### 14. From scanpy to the virtual cell: the coming-of-age of single cell analysis
-**Fabian Theis** (TUM) (keynote)
+**Fabian Theis** (TUM) (**keynote**)
 
 1. What was the tool questions back then?
     * How to speed up analysis and scale to high sample numbers?
@@ -278,7 +278,7 @@ Let's try to map gene regulatory events in 1D and 3D
 
 He presented segger, a segmentation tool. It is fast, parallelizable. ([GitHub](https://github.com/EliHei2/segger_dev))
 
-## 16. Novae: a graph-based foundation model for spatial transcriptomics data 
+### 16. Novae: a graph-based foundation model for spatial transcriptomics data 
 **Quentin Blampey** (Paris-Saclay University)
 
 * [Novae](https://github.com/MICS-Lab/novae) is a deep learning model for spatial domain assignments of spatial transcriptomics data (at both single-cell or spot resolution).
