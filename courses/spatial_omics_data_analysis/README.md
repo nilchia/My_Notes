@@ -19,7 +19,7 @@ This course delves into the cutting-edge field of Spatial Omics, focusing on Spa
 
 ---
 
-[Link to the Course website](https://www.sib.swiss/training/course/20250121_SPODA)
+[Link to the Course website](https://elixir-europe-training.github.io/ELIXIR-SCO-spatial-omics/)
 
 [Link to the Course materials](https://github.com/elixir-europe-training/ELIXIR-SCO-spatial-omics)
 
